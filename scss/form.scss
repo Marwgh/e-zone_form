@@ -1,4 +1,11 @@
 form{
     background-color: beige;
-    height: 10vw;
+    height: 50vw;
+    width: 20vw;
+    display: grid;
+    gap: 2vw;
+}
+fieldset{
+    display: grid;
+    gap: 0.5vw;
 }
