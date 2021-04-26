@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <!-- <header>
+        <div>MENU</div>
+        <div>EZONE</div>
+    </header> -->
     <h1>E-zone Form</h1>
     <main>
     <form>
@@ -294,35 +298,35 @@
         <fieldset id="gameInfo">
             <legend>Game infos</legend>
             <div>
-                <label for="">Select your game type </label>
+                <label for="gameType">Select your game type </label>
                 <select>
-                    <option value="" class="typeOption">--Please choose an option--</option>
+                    <option value="" id="gameType">--Please choose an option--</option>
                     <option value="">--Please choose an option--</option>
                 </select>
             </div>
             <div>
-                <label for="">Select your game of choice</label>
+                <label for="gameChoice">Select your game of choice</label>
                 <select>
-                    <option value="">--Please choose an option--</option>
+                    <option value="" id="gameChoice">--Please choose an option--</option>
                 </select>
                 <div></div>
             </div>
             <div>
-                <label for="">What would you like to improve in your gaming?</label>
+                <label for="gameImprove">What would you like to improve in your gaming?</label>
                 <select>
-                    <option value="">--Please choose an option--</option>
+                    <option value="" id="gameImprove">--Please choose an option--</option>
                 </select>
             </div>
             <div>
         
                 <fieldset>
                     <legend>How often you would like to hear from us?</legend>
-                    <label>Once a week</label>
-                    <input type="radio" name="notificationDate">
-                    <label>Twice a month</label>
-                    <input type="radio" name="notificationDate">
-                    <label>Once a month</label>
-                    <input type="radio" name="notificationDate">
+                    <label for="onceW">Once a week</label>
+                    <input type="radio" name="notificationDate" id="onceW">
+                    <label for="twiceM">Twice a month</label>
+                    <input type="radio" name="notificationDate" id="twiceM">
+                    <label for="onceM">Once a month</label>
+                    <input type="radio" name="notificationDate" id="onceM">
                 </fieldset>
             </div>
             <button>Submit</button>

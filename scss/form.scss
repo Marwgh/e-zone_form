@@ -17,16 +17,15 @@ label {
 }
 
 input {
-    appearance: none;
-    -webkit-appearance: none;
-    background-color: transparent;
-    border-radius: 12px;
-    border-color: #f8ddce;
-    border-style: solid;
-    border-width: 0.2vw;
-    outline: none;
-    color: #f8ddce;
-
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-radius: 12px;
+  border-color: #f8ddce;
+  border-style: solid;
+  border-width: 0.2vw;
+  outline: none;
+  color: #f8ddce;
 }
 
 input::placeholder {
@@ -57,12 +56,7 @@ option {
   opacity: 30%;
 }
 
-.typeOption {
-  color: #f8ddce;
-  opacity: 30%;
-}
-
-input[type=radio] {
+input[type="radio"] {
   background-color: transparent;
   appearance: none;
   width: 1vw;
@@ -71,35 +65,33 @@ input[type=radio] {
   outline: none;
 }
 
-
-
 #gameInfo {
-  display: none;
+  //   display: none;
 }
 
 .fullName {
   display: flex;
   justify-content: space-between;
-  div{
-      width: 10vw;
-      input{
-          width: 9vw;
-      }
+  div {
+    width: 10vw;
+    input {
+      width: 9vw;
+    }
   }
 }
 
 .email {
   display: grid;
-  input{
-      width: 20vw;
+  input {
+    width: 20vw;
   }
 }
 
 .countryH {
   display: grid;
 }
-#country{
-    width: 10vw;
+#country {
+  width: 10vw;
 }
 
 .password {
@@ -111,8 +103,8 @@ input[type=radio] {
 }
 
 .buttonNext {
-    width: 8vw;
-    position: relative;
-    left: 20vw;
-    margin-top: 2vw;
+  width: 8vw;
+  position: relative;
+  left: 20vw;
+  margin-top: 2vw;
 }
