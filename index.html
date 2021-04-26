@@ -17,11 +17,11 @@
                 <label for="first_name">First name</label>
                 <input type="text" id="first_name" placeholder="Jhon">
                 <label for="last_name">Last name</label>
-                <input type="text" id="last_name">
+                <input type="text" id="last_name" placeholder="Doe">
             </div>
             <div>
                 <label for="e-mail">Email</label>
-                <input type="email" id="e-mail">
+                <input type="email" id="e-mail" placeholder="jhon.doe@email.com">
             </div>
             <div>
                 <label for="country">Country</label>
@@ -286,21 +286,28 @@
                 <label for="repPassword">Repeat password</label>
                 <input type="password" id="repPassword">
             </div>
+            <button>Next</button>
         </fieldset>
         <fieldset>
             <legend>Game infos</legend>
             <div>
                 <label for="">Select your game type </label>
-                <select></select>
+                <select>
+                    <option value="">--Please choose an option--</option>
+                </select>
             </div>
             <div>
                 <label for="">Select your game of choice</label>
-                <select></select>
+                <select>
+                    <option value="">--Please choose an option--</option>
+                </select>
                 <div></div>
             </div>
             <div>
                 <label for="">What would you like to improve in your gaming?</label>
-                <select></select>
+                <select>
+                    <option value="">--Please choose an option--</option>
+                </select>
             </div>
             <div>
         
@@ -314,7 +321,9 @@
                     <input type="radio">
                 </fieldset>
             </div>
+            <button>Submit</button>
         </fieldset>
+        
     </form>
 </body>
 <script type="module" src="./script.js"></script>
