@@ -1,11 +1,59 @@
-form{
-    background-color: beige;
-    height: 50vw;
-    width: 20vw;
-    display: grid;
-    gap: 2vw;
+form {
+  background-color: transparent;
+  height: 50vw;
+  width: 20vw;
+  display: grid;
+  gap: 2vw;
 }
-fieldset{
-    display: grid;
-    gap: 0.5vw;
+fieldset {
+  display: grid;
+  gap: 0.5vw;
+}
+
+label {
+  color: #f8ddce;
+}
+
+input {
+  background-color: transparent;
+  border-radius: 12px;
+  border-color: #f8ddce;
+  border-style: solid;
+  border-width: 2.2px;
+}
+
+input::placeholder {
+  color: #f8ddce;
+  opacity: 30%;
+}
+
+button {
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 12px;
+  border-color: #5be080;
+  color: #5be080;
+  border-width: 2.2px;
+}
+
+select {
+  background-color: transparent;
+  border-radius: 12px;
+  border-color: #f8ddce;
+  border-style: solid;
+  border-width: 2.2px;
+}
+
+option {
+  color: #f8ddce;
+  opacity: 30%;
+}
+
+.typeOption {
+  color: #f8ddce;
+  opacity: 30%;
+}
+
+input[type="radio"] {
+  background-color: transparent;
 }
