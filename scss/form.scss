@@ -1,9 +1,11 @@
 form {
   background-color: transparent;
-  height: 50vw;
-  width: 20vw;
+  //   height: 50vw;
+  width: 30vw;
   display: grid;
   gap: 2vw;
+  position: relative;
+  margin-left: 40%;
 }
 fieldset {
   display: grid;
@@ -54,6 +56,41 @@ option {
   opacity: 30%;
 }
 
-input[type=radio] {
+input[type="radio"] {
   background-color: transparent;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: none;
+}
+
+#userInfo {
+}
+
+#gameInfo {
+  display: none;
+}
+
+.name {
+  display: gird;
+}
+
+.email {
+  display: grid;
+}
+
+.country {
+  display: grid;
+}
+
+.password {
+  display: grid;
+}
+
+.repPassword {
+  display: grid;
+}
+
+.buttonNext {
 }

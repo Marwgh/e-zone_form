@@ -11,23 +11,23 @@
 <body>
     <h1>E-zone Form</h1>
     <form>
-        <fieldset>
+        <fieldset id="userInfo">
             <legend>User Info</legend>
-            <div>
+            <div class="name">
                 <label for="first_name">First name</label>
                 <input type="text" id="first_name" placeholder="Jhon">
                 <label for="last_name">Last name</label>
                 <input type="text" id="last_name" placeholder="Doe">
             </div>
-            <div>
+            <div class="email">
                 <label for="e-mail">Email</label>
                 <input type="email" id="e-mail" placeholder="jhon.doe@email.com">
             </div>
-            <div>
+            <div class="country">
                 <label for="country">Country</label>
-                <input list="countrys" name="country" id="country">
+                <input list="countrys" name="country" id="country" placeholder="AAA">
                 <datalist id="countrys">
-                    <option>Afghanistan</option>
+                    <option value="Afghanistan">Afghanistan</option>
                     <option>Åland Islands</option>
                     <option>Albania</option>
                     <option>Algeria</option>
@@ -278,17 +278,17 @@
                     <option>Zimbabwe</option>
                 </datalist>
             </div>
-            <div>
+            <div class="password">
                 <label for="password">Password</label>
-                <input type="password" id="password">
+                <input type="password" id="password" placeholder="*****">
             </div>
-            <div>
+            <div class="repPassword">
                 <label for="repPassword">Repeat password</label>
-                <input type="password" id="repPassword">
+                <input type="password" id="repPassword" placeholder="*****">
             </div>
-            <button>Next</button>
+            <button class="buttonNext">Next</button>
         </fieldset>
-        <fieldset>
+        <fieldset id="gameInfo">
             <legend>Game infos</legend>
             <div>
                 <label for="">Select your game type </label>
