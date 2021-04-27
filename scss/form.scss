@@ -1,6 +1,7 @@
 form {
   background-color: transparent;
   width: 30vw;
+  margin-top: 10vw;
   display: grid;
   gap: 2vw;
   position: relative;
@@ -65,7 +66,7 @@ input[type="radio"] {
   outline: none;
 }
 
-.gameInfo {
+.hide {
   display: none;
 }
 

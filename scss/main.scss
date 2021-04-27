@@ -1,11 +1,93 @@
 body {
+  margin: 0;
   background-color: #16162a;
   color: #f8ddce;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 4vw;
+  padding: 0cm;
+  border-bottom: 0.15vw solid  #f8ddce;
+}
+
 main{
-    display: flex;
-    justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+footer {
+  text-align: center;
+  height: 4vw;
+  margin-top: 40vw;
+  display: flex;
+  justify-content: space-around;
+  border-top: 0.1vw solid  #f8ddce;
+}
+
+#highCorner {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  padding: 0cm;
+  left: 72vw;
+  margin-top: -6vw;
+}
+
+#lowCorner {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  padding: 0cm;
+  left: -2vw;
+  margin-top: 11vw;
+}
+
+#burger {
+  display: flex;
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  padding: 0cm;
+  left: 5vw;
+  margin-top: 1vw;
+}
+
+.icon {
+  width: 1.8vw;
+  height: 1.8vw;
+  padding: 0cm;
+  left: 5vw;
+  margin-top: -0.3vw;
+  margin-right: 1vw;
+}
+
+#logo {
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  padding: 0cm;
+  left: 45vw;
+  margin-top: 1vw;
+}
+
+#intro {
+  width: 27vw;
+  height: 7vw;
+  padding: 0cm;
+  margin-top: 2vw;
+}
+
+h1 {
+text-align: center;
+}
+
+h2 {
+  color: aliceblue;
+  font-size: 1.2vw;
+  font-weight: 400;
 }
