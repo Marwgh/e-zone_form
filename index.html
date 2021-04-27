@@ -315,18 +315,18 @@
                 <button type="button" id="next" class="buttonNext">Next</button>
             </fieldset>
             <fieldset id="gameInfo" class="hide">
-                <legend>Game infos</legend>
+                <legend></legend>
                 <div class="gameType">
                     <label for="gameType">Select your game type </label>
                     <select>
-                        <option value="" id="gameType">--Please choose an option--</option>
-                        <option value="">--Please choose an option--</option>
+                        <option value="" id="gameType" required="required">--Please choose an option--</option>
+
                     </select>
                 </div>
                 <div class="gameChoice">
                     <label for="gameChoice">Select your game of choice</label>
                     <select>
-                        <option value="" id="gameChoice">--Please choose an option--</option>
+                        <option value="" id="gameChoice" required="required">--Please choose an option--</option>
                     </select>
                     <div></div>
                 </div>
@@ -337,25 +337,26 @@
                     </select>
                 </div>
                 <div class="infoUpdate">
-                    <fieldset class="fieldset">
-                        <legend>How often you would like to hear from us?</legend>
-                        <label for="onceW">
+                    <label for="gameChoice">How often you would like to hear from us?</label>
+                    <fieldset class="radiofield">
+                        <legend></legend>
+                        <div class="once">
                             <input type="radio" name="notificationDate" id="onceW">
-                            Once a week
-                        </label>
-                        <label for="twiceM">
+                            <label for="onceW">Once a week</label>
+                        </div>
+                        <div class="twice">
                             <input type="radio" name="notificationDate" id="twiceM">
-                            Twice a month
-                        </label>
-                        <label for="onceM">
+                            <label for="twiceM">Twice a month</label>
+                        </div>
+                        <div class="month">
                             <input type="radio" name="notificationDate" id="onceM">
-                            Once a month
-                        </label>
+                            <label for="onceM">Once a month</label>
+                        </div>
                     </fieldset>
                 </div>
-                <div>
+                <div id="buttons">
                     <button type="button" id="previousB" class="buttonSubmit">Previous</button>
-                <button class="buttonSubmit">Submit</button>
+                    <button class="buttonSubmit">Submit</button>
                 </div>
             </fieldset>
 
