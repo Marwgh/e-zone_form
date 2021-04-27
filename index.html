@@ -39,15 +39,18 @@
                 <legend></legend>
                 <div class="fullName">
                     <div><label for="first_name">First name</label>
-                        <input type="text" id="first_name" placeholder="Jhon" required>
+                        <input type="text" name="first_name" id="first_name" placeholder="Jhon" required>
+                        <span class="error hide">Enter first name</span>
                     </div>
                     <div><label for="last_name">Last name</label>
-                        <input type="text" id="last_name" placeholder="Doe" required>
+                        <input type="text" name="last_name" id="last_name" placeholder="Doe" required>
+                        <span class="error hide">Enter last name</span>
                     </div>
                 </div>
                 <div class="email">
                     <label for="e-mail">Email</label>
-                    <input type="email" id="e-mail" placeholder="jhon.doe@email.com" required>
+                    <input type="email" name="email" id="e-mail" placeholder="jhon.doe@email.com" required>
+                    <span class="error hide">Email entered incorrectly</span>
                 </div>
                 <div class="countryH">
                     <label for="country">Country</label>
@@ -306,11 +309,13 @@
                 </div>
                 <div class="password">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="*****" required>
+                    <input type="password" name="password" id="password" placeholder="*****" required>
+                    <span class="error hide">Invalid Password</span>
                 </div>
                 <div class="repPassword">
                     <label for="repPassword">Repeat password</label>
-                    <input type="password" id="repPassword" placeholder="*****" required>
+                    <input type="password" name="repPassword" id="repPassword" placeholder="*****" required>
+                    <span class="error hide">Invalid Password</span>
                 </div>
                 <button type="button" id="next" class="buttonNext">Next</button>
             </fieldset>
@@ -318,20 +323,20 @@
                 <legend></legend>
                 <div class="gameType">
                     <label for="gameType">Select your game type </label>
-                    <select>
+                    <select name="game_type">
                         <option value="" id="gameType">--Please choose an option--</option>
                     </select>
                 </div>
                 <div class="gameChoice">
                     <label for="gameChoice">Select your game of choice</label>
-                    <select>
+                    <select name="game_choice">
                         <option value="" id="gameChoice">--Please choose an option--</option>
                     </select>
                     <div></div>
                 </div>
                 <div class="gameImprove">
                     <label for="gameImprove">What would you like to improve in your gaming?</label>
-                    <select>
+                    <select name="game_improve">
                         <option value="" id="gameImprove">--Please choose an option--</option>
                     </select>
                 </div>
@@ -340,15 +345,15 @@
                     <fieldset class="radiofield">
                         <legend></legend>
                         <div class="once">
-                            <input type="radio" name="notificationDate" id="onceW">
+                            <input type="radio" name="info_update" id="onceW" checked>
                             <label for="onceW">Once a week</label>
                         </div>
                         <div class="twice">
-                            <input type="radio" name="notificationDate" id="twiceM">
+                            <input type="radio" name="info_update" id="twiceM">
                             <label for="twiceM">Twice a month</label>
                         </div>
                         <div class="month">
-                            <input type="radio" name="notificationDate" id="onceM">
+                            <input type="radio" name="info_update" id="onceM">
                             <label for="onceM">Once a month</label>
                         </div>
                     </fieldset>
