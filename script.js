@@ -2,6 +2,8 @@ import  "./style.scss";
 loadJSON();
 document.querySelector(".buttonNext").addEventListener("click",showPt2);
 
+$('.gameType select').multiSelect();
+
 function showPt2 () {
     console.log("haha");
     document.querySelector(".userInfo").classList.add("hide");

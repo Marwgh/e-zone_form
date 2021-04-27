@@ -14,5 +14,8 @@
   "devDependencies": {
     "sass": "^1.32.11",
     "vite": "^2.2.1"
+  },
+  "dependencies": {
+    "multiselect": "^0.9.12"
   }
 }
