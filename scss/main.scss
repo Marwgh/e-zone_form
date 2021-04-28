@@ -84,14 +84,27 @@ footer {
 }
 
 #intro {
-  width: 30vw;
+  width: 45vw;
   height: 7vw;
   padding: 0cm;
-  margin-top: 2vw;
+  margin-top: 3vw;
 }
 
 h1 {
   text-align: center;
+  font-size: 2.2vw;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.7vw;
+  font-weight: 100;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.6vw;
+  color: #5be080;
 }
 
 h2 {
@@ -193,5 +206,22 @@ p {
 
   p {
     font-size: 3.5vw;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3.4vw;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2.8vw;
+    font-weight: 100;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 2.6vw;
+    color: #5be080;
   }
 }
