@@ -1,3 +1,17 @@
 @use "./scss/form.scss";
 @use "./scss/main.scss";
 
+@font-face {
+    font-family: "sharpiro-bold";
+    src: url("./sharpiro-bold.woff2") format("woff2");
+         
+}
+@font-face {
+    font-family: "sharpiro-regular";
+    src: url("./sharpiro-regular.woff2") format("woff2");
+         
+}
+
+*{
+    font-family: "sharpiro-regular", Arial, Helvetica, sans-serif;
+} 

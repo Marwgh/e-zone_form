@@ -6,10 +6,13 @@ document.querySelector(".buttonNext").addEventListener("click",showPt2);
 
     el.addEventListener("focus",e=>{
     
-    el.nextElementSibling && el.nextElementSibling.classList.add("hide");
-    
+    if (el.nextElementSibling && el.nextElementSibling.classList.contains("error") ) {
+    el.nextElementSibling.classList.add("hide");
+    }
+
     })
 })
+//!el.nextElementSibling.classList.contains("buttonSubmit")
 
 function showPt2 () {
     console.log("haha");
@@ -26,7 +29,7 @@ function showPt2 () {
     if (form.elements.password.value===form.elements.repPassword.value & form.elements.password.value!=false) {
         document.querySelector(".userInfo").classList.add("hide");
         document.querySelector("#gameInfo").classList.remove("hide");
-        document.querySelector("#previousB").addEventListener("click",backPt1);
+        goTonext();
 
     } else {
         form.elements.password.nextElementSibling.classList.remove("hide"); 
@@ -34,10 +37,19 @@ function showPt2 () {
     
 }
 
+function goTonext (){
+    document.querySelector("#previousB").addEventListener("click",backPt1);
+}
+
 function backPt1 () {
     document.querySelector(".userInfo").classList.remove("hide");
     document.querySelector("#gameInfo").classList.add("hide");
+    document.querySelector(".buttonNext").addEventListener("click",backPt2);
+}
+
+function backPt2(){
     document.querySelector(".buttonNext").addEventListener("click",showPt2);
+
 }
 
 function loadJSON() {
@@ -55,7 +67,7 @@ function prepLists(jsonData) {
     jsonData.areas.forEach(jsonObject => {
         var newOP = document.createElement("option");
         newOP.textContent =jsonObject;
-        document.querySelector(".gameType select").appendChild(newOP);
+        document.querySelector(".gameImprove select").appendChild(newOP);
     });
     jsonData.games.forEach(jsonObject => {
         var newOP = document.createElement("option");
@@ -65,7 +77,7 @@ function prepLists(jsonData) {
     jsonData.types.forEach(jsonObject => {
         var newOP = document.createElement("option");
         newOP.textContent =jsonObject;
-        document.querySelector(".gameImprove select").appendChild(newOP);
+        document.querySelector(".gameType select").appendChild(newOP);
     });
 }
 function post(data) {
