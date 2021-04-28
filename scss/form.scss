@@ -281,5 +281,242 @@ select:focus {
 //Media Queries
 
 @media only screen and (max-width: 600px) {
+  label {
+    color: #f8ddce;
+    margin-bottom: -2vw;
+    font-size: 4.6vw;
+  }
+
+  form {
+    background-color: #232342;
+    padding: 4vw;
+    width:80vw;
+    height: 110vw;
+    margin-top: 10vw;
+    margin-left: 1vw;
+    gap: 2vw;
   
+  }
+  
+  input {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 3.3vw;
+    cursor: pointer;
+  }
+  
+
+  input::placeholder {
+    color: #f8ddce;
+    opacity: 30%;
+    padding-left: 1vw;
+    font-size: 2.2vw;
+  }
+  
+  .fullName {
+    display: flex;
+    justify-content: flex-start;
+    gap: 9vw;
+    div {
+      width: 30vw;
+      input {
+        width: 30vw;
+        height: 5vw;
+      }
+    }
+  }
+  
+  .email {
+    display: grid;
+    input {
+      width: 30vw;
+      height: 5vw;
+    }
+  }
+  
+  .countryH {
+    display: grid;
+    input {
+      width: 30vw;
+      height: 5vw;
+    }
+  }
+  #country {
+    width: 30vw;
+      height: 5vw;
+  }
+  
+  .password {
+    display: grid;
+    input {
+      width: 69vw;
+      height: 5vw;
+    }
+  }
+  
+  .repPassword {
+    display: grid;
+    input {
+      width: 69vw;
+      height: 5vw;
+    }
+  }
+  
+  .buttonNext {
+    width: 29vw;
+    height: 6.2vw;
+    left: 20vw;
+    margin-top: 2vw;
+    font-size: 2.2vw;
+    margin-left: 2.2vw;
+    
+  }
+    
+  // ND part 
+  #gameInfo {
+    background-color: #232342;
+    padding: 4vw;
+    width:80vw;
+    height: 110vw;
+    margin-top: -4vw;
+    margin-left: -3vw;
+    gap: 2vw;
+  }
+  
+  option {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border-radius: 12px;
+    border-color: #f8ddce;
+    border-style: solid;
+    border-width: 0.2vw;
+    outline: none;
+    color: grey;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 1.3vw;
+  }
+  
+  select:focus {
+    background-color: #dffcdf;
+    color: darkblue;
+  }
+  
+  .gameType {
+    display: grid;
+    width: 31vw;
+    height: auto;
+  }
+  
+  .gameType select {
+    width: 69vw;
+    height: 5vw;
+  }
+  
+  .gameChoice {
+    display: grid;
+    width: 31vw;
+    height: auto;
+  }
+  
+  .gameChoice select {
+    width: 69vw;
+    height: 5vw;
+  }
+  
+  .gameImprove {
+    display: grid;
+    width: 31vw;
+    height: auto;
+  }
+  
+  .gameImprove select {
+    width: 69vw;
+    height: 5vw;
+  }
+  
+  .radiofield {
+    border: solid 0.2vw;
+    border-radius: 25px;
+    margin-top: 3vw;
+    width: 40vw;
+    justify-content: center;
+
+  }
+
+  .infoUpdate label {
+    width: 77vw;
+    font-size: 4.3vw;
+  }
+  
+  .once {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 30vw;
+  }
+  
+  .once label {
+    margin-left: 2.5vw;
+    font-size: 3.3vw;
+  }
+  
+  .twice {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 30vw;
+  }
+  
+  .twice label {
+    margin-left: 2.5vw;
+    font-size: 3.3vw;
+  }
+  
+  .month {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 30vw;
+  }
+  
+  .month label {
+    margin-left: 2.5vw;
+    font-size: 3.3vw;
+  }
+  
+  .infoUpdate {
+    display: grid;
+    width: 20vw;
+    height: 11vw;
+  }
+  
+  #buttons {
+    width: 75vw;
+    height: 6.2vw;
+    left: 20vw;
+    margin-top: 2vw;
+    font-size: 2.2vw;
+    margin-left: 2.2vw;
+  }
+  
+  .buttonSubmit {
+    width: 20vw;
+    height: 5.5vw;
+    position: relative;
+    left: -1vw;
+    margin-top: 2vw;
+    margin-top: 2vw;
+    font-size: 2.2vw;
+    cursor: pointer;
+  }
+
+  input[type="radio"] {
+    background-color: transparent;
+    appearance: none;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    outline: none;
+  }
+
   }
