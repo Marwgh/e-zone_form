@@ -1,5 +1,7 @@
 form {
-  background-color: transparent;
+  // background-color: transparent;
+  background-color: #232342;
+  padding: 4vw;
   width: 30vw;
   margin-top: 10vw;
   display: grid;
@@ -252,6 +254,10 @@ select:focus {
   font-size: 1.3vw;
 }
 
+.userInfo {
+  margin-left: -2vw;
+}
+
 .infoUpdate {
   display: grid;
   width: 20vw;
@@ -277,8 +283,7 @@ select:focus {
   cursor: pointer;
 }
 
-
-//Media Queries Media Queries Media Queries Media Queries Media Queries Media Queries Media Queries Media Queries Media Queries Media Queries 
+//Media Queries Media Queries Media Queries Media Queries Media Queries Media Queries Media Queries Media Queries Media Queries Media Queries
 
 @media only screen and (max-width: 699px) {
   label {
@@ -290,20 +295,19 @@ select:focus {
   form {
     background-color: #232342;
     padding: 4vw;
-    width:80vw;
+    width: 80vw;
     height: 110vw;
     margin-top: 10vw;
     margin-left: 1vw;
     gap: 2vw;
-  
   }
-  
+
   input {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     font-size: 3.3vw;
     cursor: pointer;
   }
-  
 
   input::placeholder {
     color: #f8ddce;
@@ -311,8 +315,7 @@ select:focus {
     padding-left: 1vw;
     font-size: 4.2vw;
   }
-  
-  
+
   .fullName {
     display: flex;
     justify-content: flex-start;
@@ -325,7 +328,7 @@ select:focus {
       }
     }
   }
-  
+
   .email {
     display: grid;
     input {
@@ -333,7 +336,7 @@ select:focus {
       height: 5vw;
     }
   }
-  
+
   .countryH {
     display: grid;
     input {
@@ -343,9 +346,9 @@ select:focus {
   }
   #country {
     width: 30vw;
-      height: 5vw;
+    height: 5vw;
   }
-  
+
   .password {
     display: grid;
     input {
@@ -353,7 +356,7 @@ select:focus {
       height: 5vw;
     }
   }
-  
+
   .repPassword {
     display: grid;
     input {
@@ -361,7 +364,7 @@ select:focus {
       height: 5vw;
     }
   }
-  
+
   .buttonNext {
     width: 29vw;
     height: 6.2vw;
@@ -369,21 +372,24 @@ select:focus {
     margin-top: 2vw;
     font-size: 2.2vw;
     margin-left: 2.2vw;
-    
   }
-    
-  // ND part 
+
+  .userInfo {
+    margin-left: 2vw;
+  }
+
+  // ND part
   #gameInfo {
     background-color: #232342;
     padding: 4vw;
-    width:80vw;
+    width: 80vw;
     height: 110vw;
     margin-top: -4vw;
     margin-left: -3vw;
     padding-bottom: 1vw;
     gap: 2vw;
   }
-  
+
   option {
     appearance: none;
     -webkit-appearance: none;
@@ -394,26 +400,27 @@ select:focus {
     border-width: 0.2vw;
     outline: none;
     color: grey;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     font-size: 1.3vw;
   }
-  
+
   select:focus {
     background-color: #dffcdf;
     color: darkblue;
   }
-  
+
   .gameType {
     display: grid;
     width: 31vw;
     height: 15vw;
   }
-  
+
   .gameType select {
     width: 69vw;
     height: 5vw;
   }
-  
+
   select {
     font-size: 3vw;
   }
@@ -422,25 +429,25 @@ select:focus {
     width: 31vw;
     height: 15vw;
   }
-  
+
   .gameChoice select {
     width: 69vw;
     height: 7vw;
     margin-top: 1.5vw;
   }
-  
+
   .gameImprove {
     display: grid;
     width: 80vw;
     height: 20vw;
   }
-  
+
   .gameImprove select {
     width: 69vw;
     height: 7vw;
     margin-top: 1.5vw;
   }
-  
+
   .radiofield {
     border: solid 0.2vw;
     border-radius: 25px;
@@ -448,59 +455,57 @@ select:focus {
     width: 45vw;
     padding: 1.5vw;
     justify-content: center;
-
   }
   .infoRadb {
     width: 80vw;
   }
 
   .infoUpdate label {
-
     font-size: 4.3vw;
   }
-  
+
   .once {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
     width: 30vw;
   }
-  
+
   .once label {
     margin-left: 2.5vw;
     font-size: 3.3vw;
   }
-  
+
   .twice {
     display: flex;
- 
+
     align-items: baseline;
     width: 40vw;
   }
-  
+
   .twice label {
     margin-left: 2.5vw;
     font-size: 3.3vw;
   }
-  
+
   .month {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
     width: 40vw;
   }
-  
+
   .month label {
     margin-left: 2.5vw;
     font-size: 3.3vw;
   }
-  
+
   .infoUpdate {
     display: grid;
     width: 20vw;
     height: 25vw;
   }
-  
+
   #buttons {
     width: 75vw;
     height: 6.2vw;
@@ -510,7 +515,7 @@ select:focus {
     font-size: 2.2vw;
     margin-left: 2.2vw;
   }
-  
+
   .buttonSubmit {
     width: 20vw;
     height: 5.5vw;
@@ -530,5 +535,4 @@ select:focus {
     border-radius: 50%;
     outline: none;
   }
-
-  }
+}

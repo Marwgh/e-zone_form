@@ -2,9 +2,8 @@ body {
   margin: 0;
   background-color: #16162a;
   color: #f8ddce;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.3vw;
-
 }
 
 header {
@@ -15,10 +14,10 @@ header {
   border-bottom: 0.1vw solid white;
 }
 
-main{
-display: flex;
-flex-direction: column;
-align-items: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
@@ -58,10 +57,8 @@ footer {
   margin-top: 1vw;
 }
 
-
-
 #burger h2 {
-margin-top: 0.3vw;
+  margin-top: 0.3vw;
 }
 
 .icon {
@@ -87,14 +84,14 @@ margin-top: 0.3vw;
 }
 
 #intro {
-  width: 27vw;
+  width: 30vw;
   height: 7vw;
   padding: 0cm;
   margin-top: 2vw;
 }
 
 h1 {
-text-align: center;
+  text-align: center;
 }
 
 h2 {
@@ -104,21 +101,21 @@ h2 {
 }
 
 p {
-  font-size: 1vw;
+  font-size: 1.6vw;
   font-weight: 400;
 }
 
-// Media Queries 
- /* For mobile phones: */
+// Media Queries
+/* For mobile phones: */
 
 @media only screen and (max-width: 600px) {
   main {
     height: 140vw;
   }
-  
+
   header {
     margin-top: 2vw;
-height: 10vw;
+    height: 10vw;
   }
 
   #highCorner {
@@ -129,7 +126,7 @@ height: 10vw;
     left: 59vw;
     margin-top: -17vw;
   }
-  
+
   #lowCorner {
     position: absolute;
     width: 65vw;
@@ -148,17 +145,17 @@ height: 10vw;
     left: 5vw;
     margin-top: 1vw;
   }
-  
+
   #burger h2 {
-display: none;
+    display: none;
   }
-  
+
   .icon {
     width: 5vw;
     height: 5vw;
     left: 5vw;
   }
-  
+
   #logo {
     position: absolute;
     width: 18vw;
@@ -166,7 +163,7 @@ display: none;
     padding: 0cm;
     left: 40vw;
   }
- 
+
   #search {
     display: block;
     margin-left: 79vw;
@@ -184,7 +181,7 @@ display: none;
     display: inline;
     width: 100vw;
     margin-top: 20vw;
-    border-top: 0.1vw solid  #f8ddce;
+    border-top: 0.1vw solid #f8ddce;
   }
 
   #intro {
@@ -192,7 +189,6 @@ display: none;
     text-align: center;
     margin-top: 7vw;
     margin-bottom: 14vw;
-
   }
 
   p {
