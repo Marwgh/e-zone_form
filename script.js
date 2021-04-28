@@ -2,16 +2,28 @@ import  "./style.scss";
 loadJSON();
 document.querySelector(".buttonNext").addEventListener("click",showPt2);
 
+[...document.querySelector("form").elements].forEach(el=>{
+
+    el.addEventListener("focus",e=>{
+    
+    el.nextElementSibling && el.nextElementSibling.classList.add("hide");
+    
+    })
+})
+
 function showPt2 () {
     console.log("haha");
     const form = document.querySelector("form");
     if (!form.elements.first_name.checkValidity()) {
         form.elements.first_name.nextElementSibling.classList.remove("hide");
-    } else if (!form.elements.last_name.checkValidity()) {
+    } 
+    if (!form.elements.last_name.checkValidity()) {
         form.elements.last_name.nextElementSibling.classList.remove("hide");
-    } else if (!form.elements.email.checkValidity()) {
+    } 
+    if (!form.elements.email.checkValidity()) {
         form.elements.email.nextElementSibling.classList.remove("hide");
-    } else if (form.elements.password.value===form.elements.repPassword.value & form.elements.password.value!=false) {
+    } 
+    if (form.elements.password.value===form.elements.repPassword.value & form.elements.password.value!=false) {
         document.querySelector(".userInfo").classList.add("hide");
         document.querySelector("#gameInfo").classList.remove("hide");
         document.querySelector("#previousB").addEventListener("click",backPt1);
@@ -20,8 +32,6 @@ function showPt2 () {
         form.elements.password.nextElementSibling.classList.remove("hide"); 
     }
     
-
-
 }
 
 function backPt1 () {
